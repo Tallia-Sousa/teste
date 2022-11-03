@@ -42,7 +42,7 @@ public class ContaCorrente extends Conta {
 
         }
         else {
-            double taxa = valor * 5 / 10;
+            double taxa = valor * 5 / 100;
 
             contaParaDeposito.setSaldo(valor + (contaParaDeposito.getSaldo() - taxa));
             valor = valor - taxa;
